@@ -5,8 +5,8 @@ import java.util.Date;
 public class Demo {
     public Student createHighestParent() {
         Student student1 = new Student("Johnny", "Walker", 01, null);
-        Student student2 = new Student("Ivy", "Briggs", 01, null);
-        Student[] group01 = {student1, student2};
+        //Student student2 = new Student("Ivy", "Briggs", 01, null);
+        Student[] group01 = {student1};
         Date date = new Date();
         Course course = new Course(date, "Functional Analysis", 50,
                 "mr. Bernstein", group01);
@@ -15,7 +15,7 @@ public class Demo {
 
     public Student createLowestChild() {
 
-        Student specialStudent = new SpecialStudent("Andrew", "Smith", 02, null, 123,
+        SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 02, null, 123,
                 "andrew@gmail.com");
         Date date = new Date();
         Student[] group02 = {specialStudent};
