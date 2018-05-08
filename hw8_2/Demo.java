@@ -11,12 +11,13 @@ public class Demo {
         Date date = new Date();
         Course course = new Course(date, "Functional Analysis", 50,
                 "mr. Bernstein", group01);
+        student1.coursesTaken = new Course[]{course};
         return student1;
     }
 
     public static Student createLowestChild() {
 
-        SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 02, null, 123,
+        SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 2, null, 123,
                 "andrew@gmail.com");
         Date date = new Date();
         Student[] group02 = {specialStudent};
