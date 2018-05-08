@@ -17,7 +17,7 @@ public class Demo {
 
     public static Student createLowestChild() {
 
-        Student specialStudent = new SpecialStudent("Andrew", "Smith", 2, null, 123,
+        SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 2, null, 123,
                 "andrew@gmail.com");
         Date date = new Date();
         Student[] group02 = {specialStudent};
