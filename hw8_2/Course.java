@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Course {
     Date startDate;
-    String name;
+   public String name;
     int hoursDuration;
     String teacherName;
     Student[] students;//

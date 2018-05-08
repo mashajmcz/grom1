@@ -1,5 +1,6 @@
 package lesson8.hw8_2;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Demo {
@@ -13,14 +14,24 @@ public class Demo {
         return student1;
     }
 
-    public Student createLowestChild() {
+    public static Student createLowestChild() {
 
         SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 02, null, 123,
                 "andrew@gmail.com");
         Date date = new Date();
         Student[] group02 = {specialStudent};
         Course course = new Course(date, "Functional Analysis", 50, "mr. Bernstein", group02);
+
+        specialStudent.coursesTaken = new Course[]{course};
+
         return specialStudent;
 
     }
+
+ /*   public static void main(String[] args) {
+//        Student student = new Student();
+        Student student = createLowestChild();
+        student.group.name;
+        System.out.println(Arrays.toString(student.coursesTaken));
+    }**/
 }
