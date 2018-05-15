@@ -20,7 +20,7 @@ public class Demo {
         SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 2, null, 123,
                 "andrew@gmail.com");
         Date date = new Date();
-        Student[] group02 = {specialStudent};
+        SpecialStudent[] group02 = {specialStudent};
         Course course = new Course(date, "Functional Analysis", 50, "mr. Bernstein", group02);
 
         specialStudent.coursesTaken = new Course[]{course};
@@ -28,7 +28,6 @@ public class Demo {
         return specialStudent;
 
     }
-
  /*   public static void main(String[] args) {
 //        Student student = new Student();
         Student student = createLowestChild();
