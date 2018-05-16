@@ -15,7 +15,7 @@ public class Demo {
         return student1;
     }
 
-    public static Student createLowestChild() {
+    public static SpecialStudent createLowestChild() {
 
         SpecialStudent specialStudent = new SpecialStudent("Andrew", "Smith", 2, null, 123,
                 "andrew@gmail.com");
